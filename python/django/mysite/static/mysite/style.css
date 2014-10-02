@@ -1,0 +1,23 @@
+p {
+    color:red;
+}
+body {
+    background-color:lightgray
+}
+div#navbar {
+    backgound-color:lightgray;
+    color:darkblue;
+}
+div#sidebar {
+    background-color:lightgreen;
+    color:darkblue;
+    float:left;
+}
+div#bodycontent {
+    background-color:lightblue;
+    color:darkblue;
+    float:left;
+}
+ul#navbar li {
+    display:inline;
+}

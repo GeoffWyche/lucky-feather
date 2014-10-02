@@ -1,0 +1,125 @@
+{% load staticfiles %}
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="{% static 'gpics/gpics.css' %}" />
+    <title>GPic Gallery</title>
+    <meta charset="UTF-8">
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="navbar">
+	<h1>The Phoenix</h1>
+	<h2>Art Gallery</h2>
+<!--	
+	<table class="gallerytable">
+	  <tr>
+	    <th>Pic Name</th>
+	    <th>Pic Desc</th>
+	    <th>Pic Date</th>
+	  </tr>
+	  <tr>
+	    <td><a href="{% static 'gpics/Stellar1.jpg' %}" target="_blank">Stellar1.jpg</a></td>
+	    <td>A background image</td>
+	    <td>2014</td>
+	  </tr>
+	  <tr>
+	    <td>placeholder</td>
+	    <td>placeholder desc</td>
+	    <td>2014</td>
+	  </tr>
+	</table>
+-->	
+      </div>
+      <div id="allcontent">
+	<div id="sidebar">
+	  <h2>Notes</h2>
+	  <p>Most of the artwork here was digitally touched up by the artist.</p>
+	  <ul class="ul1">
+	    <li class="li1">target one</li>
+	    <li class="li1">target two</li>
+	  </ul>
+	</div>
+	<div id="bodycontent">
+	  <h2>Art by Geoff</h2>
+<!--
+	  <h3>The answer is {{ g1 }}</h3>
+-->
+	  <table>
+	    <tr>
+	      <td class="imgdat">
+		<a class="myimg" href="{% static 'gpics/hope.jpg' %}">
+		  <img src="{% static 'gpics/hope_sm.jpg' %}" alt="hope_sm.jpg" width="200" height="275" />
+		</a>
+		<p class="imgtitle">Hope #1</p>
+		<p class="descr">Acrylic on canvas.</p>
+	      </td>
+	    </tr>
+	    <tr>
+	      <td class="imgdat">
+		<a class="myimg" href="{% static 'gpics/wanderer2-fixed.jpg' %}">
+		  <img src="{% static 'gpics/wanderer2-fixed_sm.jpg' %}" alt="wanderer2-fixed_sm.jpg" width="200" height="155" />
+		</a>
+		<p class="imgtitle">Wanderer #2</p>
+		<p class="descr">Charcoal, graphite and ink on paper.</p>
+	      </td>
+	    </tr>
+	    <tr>
+	      <td class="imgdat">
+		<a class="myimg" href="{% static 'gpics/wanderer1.jpg' %}">
+		  <img src="{% static 'gpics/wanderer1_sm.jpg' %}" alt="wanderer1_sm.jpg" width="200" height="175" />
+		</a>
+		<p class="imgtitle">Wanderer #1</p>
+		<p class="descr">Acrylic on canvas.</p>
+	      </td>
+	    </tr>
+	    <tr>
+	      <td class="imgdat">
+		<a class="myimg" href="{% static 'gpics/wordwheel-orig.jpg' %}">
+		  <img src="{% static 'gpics/wordwheel-orig_sm.jpg' %}" alt="wordwheel-orig_sm.jpg" width="200" height="275" />
+		</a>
+		<p class="imgtitle">Word Wheel</p>
+		<p class="descr">Watercolor on ricepaper.</p>
+	      </td>
+	    </tr>
+	    <tr>
+	      <td class="imgdat">
+		<a class="myimg" href="{% static 'gpics/Childish-Grudge.jpg' %}">
+		  <img src="{% static 'gpics/Childish-Grudge_sm.jpg' %}" alt="Childish-Grudge_sm.jpg" width="200" height="168" />
+		</a>
+		<p class="imgtitle">Childish Grudge</p>
+		<p class="descr">Charcoal on paper.</p>
+	      </td>
+	    </tr>
+	    <tr>
+	      <td class="imgdat">
+		<a class="myimg" href="{% static 'gpics/mountain-path-1.jpg' %}">
+		  <img src="{% static 'gpics/mountain-path-1_sm.jpg' %}" alt="mountain-path-1_sm.jpg" width="200" height="231" />
+		</a>
+		<p class="imgtitle">Mountain Path #1</p>
+		<p class="descr">Charcoal on paper.</p>
+	      </td>
+	    </tr>
+	    <tr>
+	      <td class="imgdat">
+		<a class="myimg" href="{% static 'gpics/Stellar1.jpg' %}">
+		  <img src="{% static 'gpics/Stellar1_sm.jpg' %}" alt="Stellar1_sm.jpg" width="200" height="125" />
+		</a>
+		<p class="imgtitle">Stellar #1</p>
+		<p class="descr">Digital image created with GIMP.  Intended as a laptop background.</p>
+	      </td>
+	    </tr>
+	    <tr>
+	      <td class="imgdat">
+		<a class="myimg" href="{% static 'gpics/Mandala1-1.jpg' %}">
+		  <img src="{% static 'gpics/Mandala1-1_sm.jpg' %}" alt="Mandala1-1_sm.jpg" width="200" height="125" />
+		</a>
+		<p class="imgtitle">Mandala #1</p>
+		<p class="descr">Digital image created with GIMP.  Intended as a laptop background.</p>
+	      </td>
+	    </tr>
+	</div>
+      </div>
+    </div>
+  </body>
+</html>
